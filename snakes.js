@@ -6,6 +6,8 @@ function init(){
     
    // console.log("Init");
     canvas = document.getElementById('mycanvas');
+    div=document.getElementById('mydiv');
+    pen1=document.getContext('2d');
     pen = canvas.getContext('2d');
     W = canvas.width;
     H = canvas.height;
@@ -135,9 +137,9 @@ function draw(){
     
     pen.fillRect(food.x*10,food.y*10,10,10);
     
-    pen.fillStyle = "white";
-    pen.font = "14px Roboto";
-    pen.fillText("Score : "+score,10,10);
+    pen1.fillStyle = "white";
+    pen1.font = "70px Roboto";
+    pen1.fillText("Score : "+score,10,10);
     
     
     
